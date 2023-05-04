@@ -211,7 +211,9 @@ li {
 }
 
 /* HEADER STYLES */
-
+header .navbar-lg .navbar-nav > li > a.active {
+  color: #e54d26;
+}
 .navbar-fixed-top {
   position: fixed;
   right: 0;
@@ -243,6 +245,7 @@ li {
 }
 .navbar-brand > img {
   height: 200%;
+  transition: all 0.3s;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -257,6 +260,11 @@ li {
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 600;
+  transition: all 0.3s;
+}
+
+.navbar-brand > img:hover {
+  opacity: 0.7;
 }
 .navbar-lg .navbar-nav > li > a:hover {
   color: #ff6e00;
@@ -393,21 +401,19 @@ li {
 
 .intro15 h3 {
   color: #ed7a24;
-
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: -1px;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 70px;
 }
 .intro15 .xemthem {
-  left: 0;
+  text-align: center;
 }
 .intro15 button {
   background-color: #ffffff;
-  border-color: #ed7a24;
-  color: gray;
+  color: #000;
   padding: 5px 10px;
   transition: all 0.3s;
+  border: 0.2rem outset #ed7a24;
 }
 .intro15 button:hover {
   background-color: #ed7a24;
