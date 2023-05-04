@@ -211,9 +211,7 @@ li {
 }
 
 /* HEADER STYLES */
-header .navbar-lg .navbar-nav > li > a.active {
-  color: #e54d26;
-}
+
 .navbar-fixed-top {
   position: fixed;
   right: 0;
@@ -390,7 +388,7 @@ header .navbar-lg .navbar-nav > li > a.active {
 /* 4.15. Intro / 15 */
 
 .intro15 {
-  background: url(../images/bg/15.jpg) no-repeat center;
+  background: url(../images/homeSection/bg1.png) no-repeat center;
   background-size: cover;
   padding: 120px 0 80px;
 }
@@ -401,13 +399,11 @@ header .navbar-lg .navbar-nav > li > a.active {
 
 .intro15 h3 {
   color: #ed7a24;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
   line-height: 70px;
 }
-.intro15 .xemthem {
-  text-align: center;
-}
+
 button {
   background-color: #ffffff;
   color: #000;
@@ -429,7 +425,17 @@ button:hover {
   margin: 0 0 -15px;
   line-height: 28px;
 }
-
+.owl-carousel .item {
+  max-width: 525px;
+  max-height: 657px;
+}
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+}
+.owl-nav {
+  display: none;
+}
 .hl-container {
   width: 100%;
   max-width: 520px;
@@ -1261,7 +1267,12 @@ button:hover {
   height: 100%;
   border-radius: 0 0 0 30%;
 }
-.plans-inline .plansContent {
+.plans-inline h3 {
+  color: #0a2233;
+  margin-bottom: 15px;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
 }
 .plans-inline .plansContent h4 {
   color: #ed7a24;
@@ -1620,6 +1631,16 @@ button:hover {
 .aboutCarousel .carousel-inner > .item.prev,
 .aboutCarousel .carousel-inner > .item.active.left {
   transform: translate3d(0, -100%, 0);
+}
+/* GIA TRI COT LOI */
+.values .item {
+  border-right: 5px solid rgba(128, 128, 128, 0.149);
+  text-align: center;
+}
+.values h3 {
+  color: #ed7a24;
+  font-weight: 600;
+  font-size: 2.8rem;
 }
 /* DU AN */
 .projects {
@@ -4178,7 +4199,7 @@ textarea:focus {
 
   .intro3 h3 {
     margin: 0px 0px 25px;
-    font-size: 38px;
+    font-size: 20px;
   }
 }
 
