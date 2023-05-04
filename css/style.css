@@ -408,14 +408,15 @@ header .navbar-lg .navbar-nav > li > a.active {
 .intro15 .xemthem {
   text-align: center;
 }
-.intro15 button {
+button {
   background-color: #ffffff;
   color: #000;
-  padding: 5px 10px;
+  padding: 5px 20px;
   transition: all 0.3s;
-  border: 0.2rem outset #ed7a24;
+  border: 0.1rem outset #ed7a24;
+  margin-top: 10px;
 }
-.intro15 button:hover {
+button:hover {
   background-color: #ed7a24;
   color: white;
 }
@@ -1248,7 +1249,30 @@ header .navbar-lg .navbar-nav > li > a.active {
   width: 150px;
   border-bottom-left-radius: 40px;
 }
+/* PLANS */
 
+.plans-inline .plansImg {
+  max-width: 420px;
+  max-height: 600px;
+  margin-right: 10%;
+}
+.plans-inline .plansImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 30%;
+}
+.plans-inline .plansContent {
+}
+.plans-inline .plansContent h4 {
+  color: #ed7a24;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+.plans-inline .plansContent p {
+  color: #000;
+  font-family: 600;
+  font-size: 1.4rem;
+}
 /*  ABOUT */
 
 .about-inline {
