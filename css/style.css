@@ -392,14 +392,27 @@ li {
 }
 
 .intro15 h3 {
-  color: #0a2233;
-  margin: 0px 0px 25px;
-  font-size: 60px;
-  font-weight: 700;
+  color: #ed7a24;
+
+  font-size: 40px;
+  font-weight: 500;
   letter-spacing: -1px;
   line-height: 70px;
 }
-
+.intro15 .xemthem {
+  left: 0;
+}
+.intro15 button {
+  background-color: #ffffff;
+  border-color: #ed7a24;
+  color: gray;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+.intro15 button:hover {
+  background-color: #ed7a24;
+  color: white;
+}
 .intro15 p {
   font-size: 16px;
   font-weight: 400;
