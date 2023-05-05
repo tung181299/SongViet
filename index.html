@@ -312,83 +312,66 @@
       <div id="byProjects" class="agent agent-dark">
         <div class="container">
           <div class="agent-inline">
-            <h3><img src="images/homeSection/project.svg" /> DỰ ÁN</h3>
+            <h3><img src="images/homeSection/project.svg" /> DỰ ÁN NỔI BẬT</h3>
           </div>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <!-- item 1 -->
+          <div class="agent-carousel">
+            <div class="item">
               <div class="agent-box">
-                <figure>
-                  <img class="img-responsive" src="images/agent/1.jpg" alt="" />
-                </figure>
-                <div>
-                  <h4>Joseph Doe</h4>
-                  <small>18 Properties</small>
-                  <ul class="list-inline social-icons icon-circle">
-                    <li><a href="#" class="social fa fa-facebook"></a></li>
-                    <li><a href="#" class="social fa fa-twitter"></a></li>
-                    <li><a href="#" class="social fa fa-linkedin"></a></li>
-                  </ul>
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 1</h4>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-6 col-md-3">
-              <!-- item 2 -->
+            <div class="item">
               <div class="agent-box">
-                <figure>
-                  <img class="img-responsive" src="images/agent/2.jpg" alt="" />
-                </figure>
-                <div>
-                  <h4>Maria Wade</h4>
-                  <small>12 Properties</small>
-                  <ul class="list-inline social-icons icon-circle">
-                    <li><a href="#" class="social fa fa-facebook"></a></li>
-                    <li><a href="#" class="social fa fa-twitter"></a></li>
-                    <li><a href="#" class="social fa fa-linkedin"></a></li>
-                  </ul>
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 2</h4>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-6 col-md-3">
-              <!-- item 3 -->
+            <div class="item">
               <div class="agent-box">
-                <figure>
-                  <img class="img-responsive" src="images/agent/3.jpg" alt="" />
-                </figure>
-                <div>
-                  <h4>David Mach</h4>
-                  <small>7 Properties</small>
-                  <ul class="list-inline social-icons icon-circle">
-                    <li><a href="#" class="social fa fa-facebook"></a></li>
-                    <li><a href="#" class="social fa fa-twitter"></a></li>
-                    <li><a href="#" class="social fa fa-linkedin"></a></li>
-                  </ul>
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 3</h4>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-6 col-md-3">
-              <!-- item 4 -->
+            <div class="item">
               <div class="agent-box">
-                <figure>
-                  <img class="img-responsive" src="images/agent/4.jpg" alt="" />
-                </figure>
-                <div>
-                  <h4>Jeniffer Doe</h4>
-                  <small>20 Properties</small>
-                  <ul class="list-inline social-icons icon-circle">
-                    <li><a href="#" class="social fa fa-facebook"></a></li>
-                    <li><a href="#" class="social fa fa-twitter"></a></li>
-                    <li><a href="#" class="social fa fa-linkedin"></a></li>
-                  </ul>
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 4</h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="agent-box">
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 5</h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="agent-box">
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 6</h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="agent-box">
+                <img class="img-responsive" src="images/agent/1.jpg" alt="" />
+                <div class="agent-caption">
+                  <h4>Joseph Doe 7</h4>
                 </div>
               </div>
             </div>
           </div>
-
           <div class="space100"></div>
         </div>
       </div>
@@ -600,6 +583,30 @@
           },
           1000: {
             items: 1,
+            nav: true,
+            loop: false,
+          },
+        },
+      });
+    </script>
+    <script>
+      $(".agent-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true,
+            loop: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+            loop: false,
+          },
+          1000: {
+            items: 4,
             nav: true,
             loop: false,
           },
