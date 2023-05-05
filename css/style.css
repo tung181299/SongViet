@@ -1049,12 +1049,70 @@ button:hover {
   padding: 0 20px;
 }
 
-/*  ICON BOX  */
-
-.services {
-  padding: 100px 0 0;
+/*  NEWS  */
+.news {
+  position: relative;
+}
+.news-carousel {
+  overflow: hidden;
+}
+.news-carousel .owl-item {
+  display: inline-block;
+}
+.news-carousel .owl-nav {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  margin: 0;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.news-carousel .owl-item {
+  width: 366.67px;
+  height: 250px;
+  padding: 10px 20px;
+  background: #ffffff;
+}
+.news-carousel .item {
+  width: 100%;
 }
 
+.news-carousel .news-content {
+  padding: 10px 30px;
+  opacity: 0.6;
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.05);
+  border: 0 solid #000;
+  border-radius: 0px 50px;
+  transition: all 0.2s;
+}
+.news-carousel .news-content.active {
+  opacity: 1;
+  border: 2px solid #292663;
+}
+.news-carousel .news-content:hover {
+  opacity: 1;
+  border: 2px solid #292663;
+}
+.news-carousel .news-content h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ed7a23;
+  margin-bottom: 10px;
+}
+.news-carousel .news-content p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.news .xemthem {
+  text-align: center;
+  margin-bottom: 100px;
+}
 .service-box {
   text-align: center;
 }
@@ -2779,14 +2837,23 @@ footer .list-inline li {
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-.agent-carousel .owl-nav .owl-prev {
+.agent-carousel .owl-nav .owl-prev,
+.news-carousel .owl-nav .owl-prev {
   display: none;
 }
-.agent-carousel .owl-nav .owl-next {
+
+.agent-carousel .owl-nav .owl-next,
+.news-carousel .owl-nav .owl-next {
   background: transparent;
   color: #ed7a24;
   font-size: 100px;
   border: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .agent-carousel .owl-nav .owl-next,
+  .news-carousel .owl-nav .owl-next {
+    display: none;
+  }
 }
 .agent-box {
   margin-top: 10%;

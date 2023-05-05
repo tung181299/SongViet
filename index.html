@@ -410,56 +410,74 @@
         </div>
       </div>
 
-      <!-- Faq -->
+      <!-- TIN TUC -->
       <div class="container" id="faq">
         <div class="about-inline">
-          <h3><img src="images/homeSection/news.svg" /> TIN TỨC</h3>
+          <h3><img src="images/homeSection/news.svg" /> Tin tức</h3>
         </div>
       </div>
 
-      <!-- SERVICES -->
-      <div class="service3 icon-box-square">
+      <div class="news icon-box-square">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="text-center">
-                <span><i class="fa fa-5x fa-search fa-clr"></i></span>
-                <div class="services-content">
-                  <h2>Search Property from Anywhere</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
-                    sagittis libero vitae auctor elit. Praesent accumsan mauris
-                    eget tortor auctor efficitur nunc iaculis nunc.
-                  </p>
-                </div>
+          <div class="news-carousel">
+            <div class="item">
+              <div class="news-content active">
+                <h4>
+                  Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ tình
+                  hình đi xuống
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="text-center">
-                <span><i class="fa fa-5x fa-user-circle-o fa-clr"></i></span>
-                <div class="services-content">
-                  <h2>Professional & Friendly Agents</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
-                    sagittis libero vitae auctor elit. Praesent accumsan mauris
-                    eget tortor auctor efficitur nunc iaculis nunc.
-                  </p>
-                </div>
+            <div class="item">
+              <div class="news-content">
+                <h4>
+                  Bách Hóa Xanh lỗ 354 tỷ đồng quý 1/2023, lỗ lũy kế vượt 7.700
+                  tỷ đồng
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="text-center">
-                <span><i class="fa fa-5x fa-hand-pointer-o fa-clr"></i></span>
-                <div class="services-content">
-                  <h2>Buy and Sell Awsome Property</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
-                    sagittis libero vitae auctor elit. Praesent accumsan mauris
-                    eget tortor auctor efficitur nunc iaculis nunc.
-                  </p>
-                </div>
+            <div class="item">
+              <div class="news-content">
+                <h4>
+                  Lý do mua bất động sản để đầu tư của người Việt cao hàng đầu
+                  khu vực
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
               </div>
             </div>
+            <div class="item">
+              <div class="news-content">
+                <h4>
+                  Lý do mua bất động sản để đầu tư của người Việt cao hàng đầu
+                  khu vực
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="xemthem">
+            <a href="about.html">
+              <button>XEM THÊM</button>
+            </a>
           </div>
         </div>
       </div>
@@ -625,7 +643,7 @@
     </script>
     <script>
       $(".agent-carousel").owlCarousel({
-        loop: true,
+        slideBy: 3,
         margin: 10,
         responsiveClass: true,
         responsive: {
@@ -643,6 +661,26 @@
             items: 4,
             nav: true,
             loop: true,
+          },
+        },
+      });
+    </script>
+    <script>
+      $(".news-carousel").owlCarousel({
+        dots: false,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+
+            loop: false,
           },
         },
       });
