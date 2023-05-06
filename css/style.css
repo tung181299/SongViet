@@ -1053,6 +1053,20 @@ button:hover {
 .news {
   position: relative;
 }
+.news-inline {
+  padding: 50px 0;
+}
+.news-inline h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+
+  color: #292663;
+}
 .news-carousel {
   overflow: hidden;
 }
@@ -1078,7 +1092,12 @@ button:hover {
 }
 
 .news-carousel .news-content {
-  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 240px;
+  padding: 0px 30px;
   opacity: 0.6;
   box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.05);
   border: 0 solid #000;
@@ -1101,6 +1120,11 @@ button:hover {
   line-height: 28px;
   color: #ed7a23;
   margin-bottom: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .news-carousel .news-content p {
   font-family: "Roboto Condensed";
@@ -1108,10 +1132,15 @@ button:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .news .xemthem {
   text-align: center;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 .service-box {
   text-align: center;
@@ -1247,7 +1276,23 @@ button:hover {
 .icon-box-square .text-center p {
   font-size: 14px;
 }
+/* KHACH HANG TIEU BIEU  */
+.reviews-inline {
+  padding: 50px 0;
+}
+.reviews-inline h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
 
+  color: #292663;
+}
+.reviews .item {
+}
 /*  INFO STYLES */
 
 .info-content h3 {
