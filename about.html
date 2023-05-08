@@ -42,7 +42,7 @@
         <div
           id="carousel-example-generic"
           class="carousel slide"
-          data-ride="carousel"
+          data-ride="aboutCarousel"
         >
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -114,8 +114,38 @@
             </div>
             <!-- slide 2 -->
             <div class="item">
-              <div class="container-fluid">
-                <div class="row"></div>
+              <div class="container">
+                <div class="about-slide2">
+                  <div class="row">
+                    <div class="item1 col-md-3">
+                      <h4>Tầm nhìn</h4>
+                      <p>
+                        Trở thành nhà thầu xây dân dụng và công nghiệp mang bản
+                        sắc riêng và được tôn trọng hàng đầu Việt Nam.
+                      </p>
+                      <img src="./images/about/pic3.png" alt="" />
+                    </div>
+
+                    <div class="item2 col-md-3">
+                      <img src="./images/about/pic3.png" alt="" />
+                      <h4>Sứ mệnh</h4>
+                      <p>
+                        Cung cấp sản phẩm đem đến sự hài lòng và thịnh vượng cho
+                        khách hàng;
+                        <br /><br />
+                        Xây dựng những giá trị tốt đẹp cho xã hội và toàn thể
+                        nhân viên SONG VIỆT
+                      </p>
+                    </div>
+                    <div class="item3 col-md-6">
+                      <img
+                        src="./images/about/pic3.png"
+                        alt=""
+                        style="height: 600px"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- slide 3 -->
@@ -229,8 +259,8 @@
       });
     </script>
     <script>
-      $(".carousel").carousel({
-        interval: 100000,
+      $(".aboutCarousel").carousel({
+        interval: false,
       });
     </script>
   </body>

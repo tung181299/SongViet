@@ -358,11 +358,6 @@ li {
   text-transform: uppercase;
 }
 
-.section-head {
-  position: relative;
-  z-index: 55;
-}
-
 .section-head h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -1776,6 +1771,39 @@ button:hover {
 .carousel-item3 .carousel-content {
   width: 35%;
 }
+
+.aboutCarousel .about-slide2 img {
+  width: 100%;
+  border-radius: 0px 50px;
+  height: 466px;
+}
+.aboutCarousel .about-slide2 .item2 img {
+  height: 417px;
+}
+.about-slide2 h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+
+  color: #ed7a23;
+}
+.about-slide2 p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
 .aboutCarousel .values-inline h3 {
   color: #ed7a23;
   font-family: "Roboto Condensed";
@@ -1914,11 +1942,15 @@ button:hover {
   white-space: nowrap;
 }
 .projects .carousel .carousel-inner .innerItem #myImg {
-  width: 426px;
-  height: 574px;
+  width: 269.5px;
+  height: 400px;
   cursor: pointer;
   transition: 0.4s;
 }
+.agent-box img {
+  cursor: pointer;
+}
+
 .projects .carousel .carousel-inner .innerItem #myImg:hover {
   opacity: 0.7;
 }
@@ -1952,21 +1984,50 @@ button:hover {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: transparent;
+  background-color: black;
   margin: auto;
   padding: 0;
-  width: 426px;
-  height: 547px;
+  width: 100%;
+  height: 750px;
 }
+.modal-background {
+  width: 80%;
+  height: 80%;
+  background: white;
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.mySlides {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.mySlides img {
+  width: 670px;
+  height: 550px;
+  left: 50px;
+  top: 50px;
+  border-radius: 75px 0px;
+  margin: 0 auto;
+}
+.mySlides h4 {
+  float: right;
+}
 /* The Close Button */
 .close {
-  color: black;
-  position: absolute;
+  color: transparent;
+  position: inline-block;
   right: 0;
   font-size: 50px;
   font-weight: bold;
   opacity: 0.7;
+  background-color: transparent;
 }
 @media only screen and (max-width: 600px) {
   .close {
@@ -1979,7 +2040,7 @@ button:hover {
 }
 .close:hover,
 .close:focus {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }

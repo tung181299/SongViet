@@ -23,6 +23,10 @@
     />
     <link rel="stylesheet" href="css/ilmosys-icon.css" />
     <link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="js/vendors/slick/slick.css" />
@@ -37,216 +41,125 @@
   </head>
   <body>
     <div id="header"></div>
-    <div class="projects">
-      <div class="container-fluid">
-        <div id="carousel-id" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carousel-id"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(1)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 1.1</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(2)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 1.2</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(3)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 1.3</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(4)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 1.4</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 2 -->
-            <div class="item">
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(5)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 2.1</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(6)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 2.2</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(7)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 2.3</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="innerItem col-md-3 col-sm-6 col-xs-12">
-                <img
-                  src="./images/duan4265744.jpg"
-                  alt=""
-                  id="myImg"
-                  onclick="openModal();currentSlide(8)"
-                />
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Slide 2.4</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
-              <span class="close cursor" onclick="closeModal()">&times;</span>
-              <div class="modal-content">
-                <div class="mySlides">
-                  <div class="numbertext col-6">1 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 1</h3>
-                  </div>
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">2 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 2</h3>
-                  </div>
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">3 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 3</h3>
-                  </div>
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">4 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 4</h3>
-                  </div>
-                </div>
-                <div class="mySlides">
-                  <div class="numbertext">5 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 5</h3>
-                  </div>
-                </div>
-                <div class="mySlides">
-                  <div class="numbertext">6 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 6</h3>
-                  </div>
-                </div>
-                <div class="mySlides">
-                  <div class="numbertext">7 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 7</h3>
-                  </div>
-                </div>
-                <div class="mySlides">
-                  <div class="numbertext">8 / 8</div>
-                  <img src="./images/duan4265744.jpg" style="width: 100%" />
-                  <div class="caption-container">
-                    <h3 id="caption">Caption 8</h3>
-                  </div>
-                </div>
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <!-- Thumbnail image controls -->
+    <div id="byProjects" class="agent agent-dark" style="margin-top: 5%">
+      <div class="container">
+        <div class="agent-inline">
+          <h3>Dự án nổi bật</h3>
+        </div>
+        <div class="agent-carousel">
+          <div class="item">
+            <div class="agent-box active">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan1.png"
+                alt=""
+                onclick="openModal();currentSlide(1)"
+              />
+              <div class="agent-caption">
+                <h4>BIỆT THỰ Q7</h4>
               </div>
             </div>
           </div>
-          <!-- CONTROL -->
-          <a
-            class="left carousel-control"
-            href="#carousel-id"
-            data-slide="prev"
-          >
-            <i class="fa fa-chevron-left"></i>
-          </a>
-          <a
-            class="right carousel-control"
-            href="#carousel-id"
-            data-slide="next"
-            ><i class="fa fa-chevron-right"></i
-          ></a>
+          <div class="item">
+            <div class="agent-box">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan2.png"
+                alt=""
+                onclick="openModal();currentSlide(2)"
+              />
+              <div class="agent-caption">
+                <h4>NHÀ MÁY THÉP ĐỒNG NAI</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agent-box">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan3.png"
+                alt=""
+                onclick="openModal();currentSlide(3)"
+              />
+              <div class="agent-caption">
+                <h4>TÒA NHÀ VĂN PHÒNG QUẬN BÌNH TÂN</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agent-box">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan4.png"
+                alt=""
+                onclick="openModal();currentSlide(4)"
+              />
+              <div class="agent-caption">
+                <h4>SÂN VẬN ĐỘNG THỦ ĐỨC</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agent-box">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan2.png"
+                alt=""
+              />
+              <div class="agent-caption">
+                <h4>Joseph Doe 5</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agent-box">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan4.png"
+                alt=""
+              />
+              <div class="agent-caption">
+                <h4>Joseph Doe 6</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agent-box">
+              <img
+                class="img-responsive"
+                src="./images/projects/duan3.png"
+                alt=""
+              />
+              <div class="agent-caption">
+                <h4>Joseph Doe 7</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-background"></div>
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="mySlides">
+              <div class="container">
+                <div class="col-md-6">
+                  <img src="./images/projects/duan1.png" />
+                </div>
+                <div class="col-md-3">
+                  <h4>Thông Tin</h4>
+                  <h4>Thông Tin</h4>
+                  <h4>Thông Tin</h4>
+                  <h4>Thông Tin</h4>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <img src="./images/projects/duan2.png" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vendors/slick/slick.min.js"></script>
@@ -257,10 +170,35 @@
     <script src="js/main.js"></script>
     <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
     <script src="js/vendors/mc/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
       $(function () {
         $("#header").load("assets/header.html");
         $("#footer").load("assets/footer.html");
+      });
+    </script>
+    <script>
+      $(".agent-carousel").owlCarousel({
+        slideBy: 3,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+            loop: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+            loop: false,
+          },
+          1000: {
+            items: 4,
+            nav: true,
+            loop: true,
+          },
+        },
       });
     </script>
     <script>
