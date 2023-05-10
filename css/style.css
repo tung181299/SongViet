@@ -1151,6 +1151,7 @@ button:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 .news .xemthem {
   text-align: center;
   margin: 100px 0;
@@ -1992,7 +1993,7 @@ button:hover {
   height: 750px;
 }
 .modal-background {
-  width: 70%;
+  width: 65%;
   height: 80%;
   background: white;
   position: relative;
@@ -2001,12 +2002,13 @@ button:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .mySlides {
   position: absolute;
   margin-top: 2%;
 }
 .mySlides .modal-img {
-  width: 770px;
+  width: 65%;
 }
 .mySlides img {
   width: 100%;
@@ -2052,9 +2054,31 @@ button:hover {
   .close {
     top: 7%;
   }
+  .modal-background {
+    width: 100%;
+    height: 650px;
+  }
+  .mySlides .modal-img {
+    width: 220%;
+    height: 200px;
+    background-image: url(../images/projects/duan1.png);
+    background-size: cover;
+    border-radius: 75px 0px;
+    background-position: center;
+  }
+  .mySlides .modal-img img {
+    display: none;
+  }
   .modal-content {
-    width: 80%;
+    width: 100%;
     height: 100%;
+  }
+  .agent .modal-caption {
+    width: 500px;
+    text-align: center;
+  }
+  .agent .modal-caption h3 {
+    margin-left: 30%;
   }
 }
 .close:hover,
@@ -2121,6 +2145,7 @@ button:hover {
 }
 .news-detail .news-item1:hover {
   border: 2px solid #292663;
+  cursor: pointer;
 }
 .news-article .news-item2 {
   margin-top: 5%;
@@ -2135,8 +2160,55 @@ button:hover {
 }
 .news-article .news-item2:hover {
   border: 2px solid #292663;
+  cursor: pointer;
 }
 
+.news-detail .modal-content {
+}
+.news-detail .modal-content .news-detail-img {
+  background-image: url(../images/about/pic2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+.news-detail .modal-content .modal-background {
+  width: 70%;
+  overflow: scroll;
+}
+.news-detail .modal-content h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+
+  color: #ed7a23;
+}
+.news-detail .modal-content p {
+  margin-top: 1%;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  color: #000000;
+}
+.news-detail .modal-content i {
+  background-color: black;
+  padding: 1%;
+  color: white;
+  margin-bottom: 10%;
+}
 /* Hide the slides by default */
 .mySlides {
   display: none;
@@ -4641,7 +4713,6 @@ textarea:focus {
 
   .agent .agent-box {
     margin-bottom: 30px;
-    padding: 0 15px;
   }
 
   .info-content .btn.btn-lg {
@@ -5302,9 +5373,9 @@ textarea:focus {
     position: relative;
     float: right;
     padding: 0;
-    margin-top: -16px;
-    margin-right: 15px;
-    margin-bottom: 8px;
+
+    margin-right: -25%;
+    transform: translateY(-100%);
     background: transparent !important;
     background-image: none;
     border: none !important;

@@ -43,7 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="news-item1 col-md-6 active" style="margin-right: 10%">
-            <div class="news-img"></div>
+            <div class="news-img" onclick="openModal();currentSlide(1)"></div>
             <h4>
               Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ tình hình
               đi xuống tại THACO
@@ -55,7 +55,7 @@
             </p>
           </div>
           <div class="news-item1 col-md-6">
-            <div class="news-img"></div>
+            <div class="news-img" onclick="openModal();currentSlide(2)"></div>
             <h4>
               Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ tình hình
               đi xuống tại THACO
@@ -67,7 +67,7 @@
             </p>
           </div>
           <div class="news-article col-md-12 w-100">
-            <div class="news-item2">
+            <div class="news-item2" onclick="openModal();currentSlide(3)">
               <h4>
                 Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ tình
                 hình đi xuống tại THACO
@@ -77,7 +77,7 @@
                 sagittis libero vitae auctor elit. Praesent accumsan mauris.
               </p>
             </div>
-            <div class="news-item2">
+            <div class="news-item2" onclick="openModal();currentSlide(4)">
               <h4>
                 Bách Hóa Xanh lỗ 354 tỷ đồng quý 1/2023, lỗ lũy kế vượt 7.700 tỷ
                 đồng
@@ -87,7 +87,7 @@
                 sagittis libero vitae auctor elit. Praesent accumsan mauris.
               </p>
             </div>
-            <div class="news-item2">
+            <div class="news-item2" onclick="openModal();currentSlide(5)">
               <h4>
                 Lý do mua bất động sản để đầu tư của người Việt cao hàng đầu khu
                 vực
@@ -106,6 +106,117 @@
                 Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
                 sagittis libero vitae auctor elit. Praesent accumsan mauris.
               </p>
+            </div>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-background">
+              <div class="mySlides">
+                <div class="container-fluid">
+                  <h4>
+                    Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ
+                    tình hình đi xuống tại THACO
+                  </h4>
+                  <span>— 20/05/2023</span>
+                  <div class="news-detail-img"></div>
+                  <p>
+                    Trong năm 2022, chuỗi nhà thuốc An Khang có sự thay đổi liên
+                    tục về chiến lược. Trong nửa đầu năm, An Khang mở rộng mạnh
+                    mẽ, tăng từ 178 cửa hàng lên 510 cửa hàng chỉ trong 6 tháng.
+                    Đây là giai đoạn mà ông Nguyễn Đức Tài, Chủ tịch Thế Giới Di
+                    Động cho rằng, muốn kiếm lợi nhuận trong ngành thuốc thì
+                    thời điểm này là phù hợp để tăng trưởng mô hình chuỗi nhà
+                    thuốc.
+                  </p>
+                  <hr />
+                  <p>CHIA SẺ</p>
+                  <i class="fa fa-youtube"></i>
+                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-facebook"></i>
+                </div>
+              </div>
+              <div class="mySlides">
+                <div class="container-fluid">
+                  <h4>
+                    Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ
+                    tình hình đi xuống tại THACO
+                  </h4>
+                  <span>— 20/05/2023</span>
+                  <div class="news-detail-img"></div>
+                  <p>
+                    Trong năm 2022, chuỗi nhà thuốc An Khang có sự thay đổi liên
+                    tục về chiến lược. Trong nửa đầu năm, An Khang mở rộng mạnh
+                    mẽ, tăng từ 178 cửa hàng lên 510 cửa hàng chỉ trong 6 tháng.
+                    Đây là giai đoạn mà ông Nguyễn Đức Tài, Chủ tịch Thế Giới Di
+                    Động cho rằng, muốn kiếm lợi nhuận trong ngành thuốc thì
+                    thời điểm này là phù hợp để tăng trưởng mô hình chuỗi nhà
+                    thuốc.
+                  </p>
+                  <hr />
+                  <p>CHIA SẺ</p>
+                  <i class="fa fa-youtube"></i>
+                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-facebook"></i>
+                </div>
+              </div>
+              <div class="mySlides">
+                <div class="container-fluid">
+                  <h4>
+                    Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ
+                    tình hình đi xuống tại THACO
+                  </h4>
+                  <span>— 20/05/2023</span>
+                  <div class="news-detail-img"></div>
+                  <p>
+                    Trong năm 2022, chuỗi nhà thuốc An Khang có sự thay đổi liên
+                    tục về chiến lược. Trong nửa đầu năm, An Khang mở rộng mạnh
+                    mẽ, tăng từ 178 cửa hàng lên 510 cửa hàng chỉ trong 6 tháng.
+                    Đây là giai đoạn mà ông Nguyễn Đức Tài, Chủ tịch Thế Giới Di
+                    Động cho rằng, muốn kiếm lợi nhuận trong ngành thuốc thì
+                    thời điểm này là phù hợp để tăng trưởng mô hình chuỗi nhà
+                    thuốc.
+                  </p>
+                  <hr />
+                  <p>CHIA SẺ</p>
+                  <i class="fa fa-youtube"></i>
+                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-facebook"></i>
+                </div>
+              </div>
+              <div class="mySlides">
+                <div class="container-fluid">
+                  <h4>
+                    Tập đoàn từng chi hơn 1 tỷ USD mua Vinamilk và REE hé lộ
+                    tình hình đi xuống tại THACO
+                  </h4>
+                  <span>— 20/05/2023</span>
+                  <div class="news-detail-img"></div>
+                  <p>
+                    Trong năm 2022, chuỗi nhà thuốc An Khang có sự thay đổi liên
+                    tục về chiến lược. Trong nửa đầu năm, An Khang mở rộng mạnh
+                    mẽ, tăng từ 178 cửa hàng lên 510 cửa hàng chỉ trong 6 tháng.
+                    Đây là giai đoạn mà ông Nguyễn Đức Tài, Chủ tịch Thế Giới Di
+                    Động cho rằng, muốn kiếm lợi nhuận trong ngành thuốc thì
+                    thời điểm này là phù hợp để tăng trưởng mô hình chuỗi nhà
+                    thuốc.
+                  </p>
+                  <hr />
+                  <p>CHIA SẺ</p>
+                  <i class="fa fa-youtube"></i>
+                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-facebook"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -134,6 +245,52 @@
         slidesToScroll: 3,
         arrows: false,
       });
+    </script>
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
     </script>
   </body>
 </html>
