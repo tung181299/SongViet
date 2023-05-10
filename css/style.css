@@ -2177,6 +2177,15 @@ button:hover {
   width: 70%;
   overflow: scroll;
 }
+.news-detail .modal-content .modal-background::-webkit-scrollbar {
+  width: 5px;
+}
+.news-detail .modal-content .modal-background::-webkit-scrollbar-thumb {
+  background: #ed7a23;
+}
+.news-detail .modal-content .modal-background::-webkit-scrollbar-thumb:hover {
+  background: #ed7a23;
+}
 .news-detail .modal-content h4 {
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -2207,7 +2216,7 @@ button:hover {
   background-color: black;
   padding: 1%;
   color: white;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 /* Hide the slides by default */
 .mySlides {
@@ -2379,6 +2388,47 @@ button:hover {
   text-align: center;
 
   color: #000000;
+}
+.recruit-detail {
+  margin-top: 15%;
+}
+.recruit-detail h3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ed7a23;
+  text-align: center;
+}
+.recruit-detail h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ed7a23;
+}
+.recruit-detail .nav-pills > li > a {
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 50px 0px;
+  text-align: center;
+  padding: 10% 5%;
+  border: 2px solid transparent;
+  margin-bottom: 5%;
+}
+.recruit-detail .nav-pills > li.active > a {
+  background: #ffffff;
+  border: 2px solid #ed7a23;
+}
+
+.tab-content .active {
+  opacity: 1;
+}
+
+.tab-content .tab-pane {
+  background: #ed7a23;
+  border-radius: 0px 100px;
 }
 /*  CONTACT */
 
