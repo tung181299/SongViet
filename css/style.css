@@ -2425,10 +2425,61 @@ button:hover {
 .tab-content .active {
   opacity: 1;
 }
+.recruit-detail .tab-content h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #ffffff;
+}
+.recruit-detail .tab-content ul li {
+  display: list-item;
+  list-style: inside;
+}
+.recruit-detail a button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.recruit-detail a button:hover {
+  background: white;
+  color: #e54d26;
+}
+.recruit-detail .tab-content p,
+li {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  display: block;
+  align-items: center;
+  text-align: justify;
+
+  color: #ffffff;
+}
 
 .tab-content .tab-pane {
   background: #ed7a23;
   border-radius: 0px 100px;
+  padding: 8%;
+}
+.recruit-detail .tab-content {
+  overflow: scroll;
+}
+.recruit-detail .tab-content::-webkit-scrollbar {
+  width: 5px;
+}
+.recruit-detail .tab-content::-webkit-scrollbar-thumb {
+  background: white;
+}
+.recruit-detail .tab-content::-webkit-scrollbar-thumb:hover {
+  background: white;
 }
 /*  CONTACT */
 
@@ -2812,7 +2863,9 @@ button:hover {
   padding: 25px 15px 0;
   text-align: center;
 }
-
+.recruit-detail .tab-content {
+  padding: 0;
+}
 .lead a {
   color: #ff6e00;
 }
