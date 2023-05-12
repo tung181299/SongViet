@@ -33,7 +33,9 @@ Author URL: https://themeforest.net/user/thememor
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
 
 /* GLOBAL STYLES */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #fff;
   font-family: "Roboto Condensed", sans-serif;
@@ -2468,19 +2470,25 @@ li {
   background: #ed7a23;
   border-radius: 0px 100px;
   padding: 8%;
+  height: 559px;
 }
-.recruit-detail .tab-content {
+.recruit-detail .tab-pane {
   overflow: scroll;
 }
-.recruit-detail .tab-content::-webkit-scrollbar {
-  width: 5px;
+.recruit-detail .tab-pane::-webkit-scrollbar {
+  width: 0px;
 }
-.recruit-detail .tab-content::-webkit-scrollbar-thumb {
+.recruit-detail .tab-pane::-webkit-scrollbar-thumb {
   background: white;
 }
-.recruit-detail .tab-content::-webkit-scrollbar-thumb:hover {
+.recruit-detail .tab-pane::-webkit-scrollbar-thumb:hover {
   background: white;
 }
+.recruit-detail .tab-pane::-webkit-scrollbar-button {
+  height: 100px;
+  width: 0px;
+}
+
 /*  CONTACT */
 
 #contact-info {
@@ -2509,7 +2517,63 @@ li {
 
 .c-info p {
 }
+.contact-form {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+.contact-form h4 {
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 5%;
 
+  color: #ed7a23;
+}
+.contact-form input {
+  width: 100%;
+  border: 1px solid #282662;
+  background: #f2f2f2;
+
+  margin-bottom: 2%;
+}
+.contact-form textarea {
+  margin-top: 5%;
+  width: 100%;
+  border: 1px solid #282662;
+  background: #f2f2f2;
+}
+.contact-form .contact-right {
+  height: 296px;
+}
+.contact-form .contact-bg {
+  background-image: url(../images/projects/duan1.png);
+  height: 80%;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px 0px;
+}
+.contact-form button {
+  height: 15%;
+  width: 185px;
+  background: #ed7a23;
+  border-radius: 0px 15px;
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  opacity: 0.8;
+}
+.contact-form button:hover {
+  opacity: 1;
+}
 #contact-form {
   background: #ff6e00;
   padding: 100px 0;
