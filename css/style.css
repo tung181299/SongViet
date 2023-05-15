@@ -33,9 +33,7 @@ Author URL: https://themeforest.net/user/thememor
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
 
 /* GLOBAL STYLES */
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   background: #fff;
   font-family: "Roboto Condensed", sans-serif;
@@ -256,11 +254,15 @@ li {
 
 .navbar-lg .navbar-nav > li > a {
   padding: 40px 12px 35px;
-  font-size: 16px;
-  line-height: 1.6;
+
   color: rgba(0, 0, 0, 0.9);
   font-weight: 600;
   transition: all 0.3s;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .navbar-brand > img:hover {
@@ -1888,7 +1890,7 @@ button:hover {
 }
 .aboutCarousel .carousel-inner h2 {
   display: inline-block;
-  overflow: hidden;
+
   white-space: nowrap;
 }
 .aboutCarousel .carousel-inner span {
@@ -1896,7 +1898,10 @@ button:hover {
   color: #000;
   line-height: 50px;
 }
-
+.aboutCarousel .carousel-inner {
+  overflow: scroll;
+  margin-top: 10%;
+}
 .aboutCarousel .carousel-inner > .item .row > img {
   height: 100px;
 }
@@ -4857,7 +4862,13 @@ textarea:focus {
 
   .navbar-lg .navbar-nav > li > a {
     padding: 40px 5px 35px;
-    font-size: 10px;
+    border-bottom: 10px solid black;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
   }
 
   .icon-box-square .text-center {
@@ -4984,7 +4995,7 @@ textarea:focus {
 
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   .navbar-brand > img {
-    width: 100%;
+    width: 200%;
     height: 80%;
   }
   .footer2 .footer-logo {
@@ -5533,7 +5544,15 @@ textarea:focus {
 
   .navbar-lg .navbar-nav > li > a {
     padding: 12px 30px;
-    font-size: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.114);
+    margin-left: 25%;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    width: 50%;
   }
 
   .navbar-toggle {
@@ -5541,14 +5560,15 @@ textarea:focus {
     float: right;
     padding: 0;
 
-    margin-right: -25%;
-    transform: translateY(-100%);
     background: transparent !important;
     background-image: none;
     border: none !important;
     border-radius: 4px;
   }
-
+  .navbar-header button {
+    padding: 0;
+    width: 20px;
+  }
   .navbar-toggle .icon-bar {
     display: block;
     width: 20px;
@@ -5579,7 +5599,7 @@ textarea:focus {
     border-top: none;
     box-shadow: none;
     position: absolute;
-    background: #eaeaea;
+    background: white;
     top: 80px;
     width: 100%;
     max-width: 500px;
@@ -5632,7 +5652,8 @@ textarea:focus {
   }
 
   .navbar-brand > img {
-    max-width: 80px;
+    max-width: 150px;
+    height: 120%;
   }
 
   .error-content h4 {

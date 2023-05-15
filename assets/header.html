@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="images/favicon.html" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- Icons -->
     <link
@@ -37,26 +36,24 @@
   </head>
   <body>
     <header>
-      <nav class="navbar-inverse navbar-lg navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-lg navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <a href="index.html" class="navbar-brand brand"
               ><img src="images/logo1.png" alt="logo"
             /></a>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
 
           <div
             class="collapse navbar-collapse"
@@ -97,16 +94,10 @@
         </div>
       </nav>
     </header>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/vendors/slick/slick.min.js"></script>
-    <script src="js/vendors/jquery.easing.min.js"></script>
-    <script src="js/vendors/stellar.js"></script>
-    <script src="js/vendors/isotope/isotope.pkgd.js"></script>
-    <script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
-    <script src="js/vendors/mc/main.js"></script>
+    <script>
+      $(document).on("click", function () {
+        $(".navbar .collapse").collapse("hide");
+      });
+    </script>
   </body>
 </html>
