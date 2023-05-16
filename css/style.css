@@ -261,7 +261,7 @@ li {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 23px;
 }
 
@@ -1402,8 +1402,19 @@ button:hover {
 
   padding-bottom: 10%;
 }
-.plans-inline h3 img {
-  padding-bottom: 20px;
+.plans-inline .plans-content {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.plans-inline .plans-content .plans-inline-title {
+  width: 70%;
+}
+.plans-inline .plans-content .plans-inline-img {
+  width: 10%;
+}
+.plans-inline .plans-content .plans-inline-title {
+  margin-top: 30px;
 }
 .plans-inline .plansImg {
   max-width: 558px;
@@ -1423,9 +1434,6 @@ button:hover {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
-  display: flex;
-  align-items: center;
-
   color: #292663;
 }
 .plans-inline .plansContent h3 {
@@ -1706,7 +1714,29 @@ button:hover {
   margin: 0;
   transform: translateY(-50%);
 }
+.values .item {
+  border-right: 5px solid rgba(128, 128, 128, 0.149);
+  text-align: center;
+}
 @media only screen and (max-width: 700px) {
+  .plans-inline .plans-content {
+    text-align: center;
+  }
+  .plans-inline .plans-content .plans-inline-img {
+    width: 100%;
+  }
+  .plans-inline .plansImg {
+    margin: 0;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .plans-inline .plans-content .plans-inline-title {
+    width: 100%;
+    margin-top: 0;
+  }
+  .plans-inline {
+    margin-bottom: 15%;
+  }
   .aboutUs .navbar .gioithieu {
     top: 100%;
   }
@@ -1726,6 +1756,20 @@ button:hover {
     margin-bottom: 10%;
     padding: 0;
   }
+  .aboutUs .about-slide2 .item1,
+  .item2,
+  .item3 {
+    padding: 0 25px;
+    margin-bottom: 5%;
+  }
+  .aboutUs .about-slide2 h4 {
+    margin-top: 5%;
+  }
+  .aboutUs .about-slide3 .col-md-4,
+  .values .item {
+    border: 0;
+  }
+
   .aboutCarousel .carousel-indicators {
     top: 50%;
   }
@@ -1955,10 +1999,7 @@ button:hover {
   transform: translate3d(0, -100%, 0);
 }
 /* GIA TRI COT LOI */
-.values .item {
-  border-right: 5px solid rgba(128, 128, 128, 0.149);
-  text-align: center;
-}
+
 .values h3 {
   color: #292663;
   font-style: normal;
@@ -2396,8 +2437,6 @@ button:hover {
   align-items: center;
   padding: 72px 46px;
   gap: 10px;
-
-  width: 270px;
   height: 150px;
   box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.05);
   background: #ffffff;
@@ -5605,6 +5644,9 @@ textarea:focus {
     border: none !important;
     border-radius: 4px;
   }
+  .navbar-header {
+    background: white;
+  }
   .navbar-header button {
     padding: 0;
     width: 20px;
@@ -5640,7 +5682,7 @@ textarea:focus {
     box-shadow: none;
     position: absolute;
     background: white;
-    top: 80px;
+    top: 50px;
     width: 100%;
     max-width: 500px;
     right: 0;
