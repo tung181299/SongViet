@@ -1769,9 +1769,11 @@ button:hover {
   .values .item {
     border: 0;
   }
-
+  .aboutCarousel .carousel-inner {
+    margin-top: 10%;
+  }
   .aboutCarousel .carousel-indicators {
-    top: 50%;
+    top: 60%;
   }
   .aboutUs .aboutCarousel .carousel-content h4 {
     font-size: 40px;
@@ -1979,7 +1981,6 @@ button:hover {
   line-height: 50px;
 }
 .aboutCarousel .carousel-inner {
-  margin-top: 10%;
   overflow: scroll;
 }
 
